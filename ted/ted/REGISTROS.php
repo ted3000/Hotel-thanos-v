@@ -53,7 +53,7 @@ include "conexion.php";
                     <div class="form-row">
                         <label>
                             <span>Telefono</span>
-                            <input type="number" name="Telefono">
+                            <input type="text" name="Telefono">
                         </label>
                     </div>
 
@@ -63,10 +63,22 @@ include "conexion.php";
                             <textarea name="Mensaje"></textarea>
                         </label>
                     </div>
+
+                    <div class="form-row">
+                    <span>Tipos de habitacion</span>
+                    <select name="dropdown">
+                        <option>Simple</option>
+                        <option>Doble</option>
+                        <option>Matrimonial</option>
+                    </select>
+                    </div>
                     
                     <div class="form-row">
                         <button type="submit">Enviar</button>
                     </div>
+
+                    
+            </div>
 
                 </div>
 
