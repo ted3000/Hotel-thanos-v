@@ -33,60 +33,41 @@ include "conexion.php";
         <div class="form-white-background">
         
         <div class="form-title-row">
-            <h1>REGISTRATE</h1>
+            <h1>Productos</h1>
         
         </div>
                 <div class="contact">
 
+                
                 <div class="form-row">
-                    <input name="Apellodos" placeholder="Apellidos" tabindex="1" required autofocus>
-                </div>
-
-               <div class="form-row">
                     <input name="Nombre" placeholder="Nombre" tabindex="1" required autofocus>
                 </div>
+
+                <div class="form-row">
+                    <input name="Provedor" placeholder="Provedor" tabindex="1" required autofocus>
+                </div>
+
                 <div class="form-row">
                 <input name="Fecha_nac" placeholder="Fecha de nacimiento" type="date" tabindex="1" required autofocus >
                 </div>
 
-                <div class="form-row"><br>
-                    <select class="" name="Sexo" id="" tabindex="2" required autofocus>
-                        <option value="Elija">Elija su sexo</option>
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                    </select>
-                </div>
 
                 <div class="form-row">
-                    <input name="Talla" placeholder="Ingrese la talla" type="text" tabindex="2" required >
+                    <input name="Precio" placeholder="Precio" type="text" tabindex="2" required >
                 </div>
                 
                 <div class="form-row">
-                    <input name="DNI" placeholder="DNI" type="text" tabindex="3" required>
+                    <input name="Stock" placeholder="Stock" type="text" tabindex="3" required>
                 </div>
 
                 <div class="form-row">
-                    <input name="Correo" placeholder="Escriba su correo" type="text" tabindex="4" required>
+                    <input name="Buscar" placeholder="Ingrse el nombre del producto..." type="text" tabindex="4" required>
                 </div>
 
-                <div class="form-row">
-                    <input name="Celular" placeholder="Nro de Telefono" type="text" tabindex="4" required>
-                </div>
+             
                 
                 <div class="form-row">
-                    <input name="Direccion" placeholder="Escriba su direccion " type="text" tabindex="4" required >
-                </div>
-
-                <div class="form-row">
-                    <input name="Distrito" placeholder="Escriba su distrio " type="text" tabindex="4" required >
-                </div>
-
-                <div class="form-row">
-                    <input name="Provincia" placeholder="Escriba su provincia " type="text" tabindex="4" required >
-                </div>
-                
-                <div class="form-row">
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Guardar</button>
                 </div>
 
 
