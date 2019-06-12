@@ -67,9 +67,9 @@ include "conexion.php";
                     <div class="form-row">
                     <span>Tipos de habitacion</span>
                     <select name="dropdown">
-                        <option value="Simple">Simple</option>
-                        <option value="Doble">Doble</option>
-                        <option value="Matrimonial">Matrimonial</option>
+                        <option>Simple</option>
+                        <option>Doble</option>
+                        <option>Matrimonial</option>
                     </select>
                     </div>
                     
@@ -99,19 +99,18 @@ include "conexion.php";
         $e=$_POST['Email'];
         $t=$_POST['Telefono'];
         $m=$_POST['Mensaje'];
+
         switch ($s) {
         case 'Simple':
-            $s='Simp';
+            $s='Sim';
             break;
         case 'Doble':
-           $s='Dob';
+           $s='Duo';
             break;
         case 'Matrimonial':
            $s='Mat';
             break;
-
         }
-
         $consulta="INSERT INTO contactanos (Nombres, Email, Telefono, Mensaje) VALUES ('$n', '$e'; '$t', '$m')";
     $conectar->query($consulta) or die(mysqli_error());
 

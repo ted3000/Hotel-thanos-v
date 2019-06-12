@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>REGISTRATE</title>
+	<title>R: Empleados</title>
 
 	<link rel="stylesheet" href="css/demo.css">
 	<link rel="stylesheet" href="css/recliente.css">
@@ -33,7 +33,7 @@ include "conexion.php";
         <div class="form-white-background">
         
         <div class="form-title-row">
-            <h1>REGISTRATE</h1>
+            <h1>Empleados</h1>
         
         </div>
                 <div class="contact">

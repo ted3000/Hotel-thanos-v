@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>REGISTRATE</title>
+	<title>Productos</title>
 
 	<link rel="stylesheet" href="css/demo.css">
 	<link rel="stylesheet" href="css/recliente.css">
@@ -48,7 +48,7 @@ include "conexion.php";
                 </div>
 
                 <div class="form-row">
-                <input name="Fecha_nac" placeholder="Fecha de nacimiento" type="date" tabindex="1" required autofocus >
+                <input name="Fecha_ven" placeholder="Fecha de vencimiento" type="date" tabindex="1" required autofocus >
                 </div>
 
 
@@ -69,8 +69,6 @@ include "conexion.php";
                 <div class="form-row">
                     <button type="submit">Guardar</button>
                 </div>
-
-
         
     </form>
     
@@ -81,23 +79,16 @@ include "conexion.php";
 <?php 
 
     if ($_POST){
-        $a=$_POST['Apellidos'];
         $n=$_POST['Nombre'];
-        $f=$_POST['Fecha_nac'];
-        $t=$_POST['Talla'];
-        $DNI=$_POST['DNI'];
-        $t=$_POST['Telefono'];
-        $m=$_POST['Mensaje'];
+        $p=$_POST['Provedor'];
+        $f=$_POST['Fecha_ven'];
+        $pr=$_POST['Precio'];
+        $sc=$_POST['Stock'];
+        $bs=$_POST['Buscar'];
+        
 
-    switch ($s) {
-        case 'Hombre':
-            $s='H';
-            break;
-        case 'Mujer':
-           $s='F';
-            break;
-    }
-        $consulta="INSERT INTO contactanos (Nombres, Email, Telefono, Mensaje) VALUES ('$n', '$e'; '$t', '$m')";
+    
+        $consulta="INSERT INTO contactanos (Nombres, Provedor, Fecha_ven, Precio, Stock, Buscar) VALUES ('$n', '$p'; '$f', '$pr', '$sc', '$bs')";
     $conectar->query($consulta) or die(mysqli_error());
 
     echo '<script type="text/javascrip">
